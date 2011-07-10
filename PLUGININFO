@@ -1,0 +1,4 @@
+Version='0.0.1'
+Authors=['Adarsh Jois <avjois89@gmail.com']
+Name='Bluetooth Controller'
+Description='Plugin that allows you to control exaile via bluetooth'

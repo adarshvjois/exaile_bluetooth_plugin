@@ -3,11 +3,8 @@ Bluetooth Plugin for Exaile:
 To make this plugin work:
 1) Create a folder in your exaile plugin directory called "bluetooth_plugin" (or anything you wish)
 2) Copy these three files to that directory
-<<<<<<< HEAD
+
   a)__init__.py
-=======
-  a)__init__.py 
->>>>>>> 0831c7a2364150c77daf598ed3aa2669be7f2bf7
   b)btSvr.py
   c)PLUGININFO
 3) Restart exaile if it is running

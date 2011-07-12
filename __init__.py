@@ -29,10 +29,10 @@ class ClientThread(threading.Thread):
                 stuff=data.encode("utf-8")
                 #controlling player thru the exaile object depending in the data recieved..simple flags...Pause,Next,Prev and Exit
                 if stuff=="PAUSE":
-                    if exaile.player.is_paused() or not exaile.player.is_playing():
-                        exaile.queue.play()
-                    elif exaile.player.is_playing():
-                        exaile.player.pause()
+                    if exaile.player.is_playing() or exaile.player.is_paused():
+                       exaile.player.toggle_pause()
+                    else:
+                      exaile.queue.play()
                 if stuff== "PREV":
                     exaile.queue.prev()
                 if stuff=="NEXT":

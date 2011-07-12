@@ -37,6 +37,12 @@ class ClientThread(threading.Thread):
                     exaile.queue.prev()
                 if stuff=="NEXT":
                     exaile.queue.next()
+                if stuff=="VOL_UP":
+                    exaile.player.set_volume(5+exaile.player.get_volume())
+                if stuff=="VOL_DOWN":
+                        vol=exaile.player.get_volume()
+                        if vol>=0:
+                                exaile.player.set_volume(vol-5)
                 if stuff=="EXIT":
                             break;
             except IOError as err: #fix this to prevent all client threads being disconnected#                

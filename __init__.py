@@ -65,7 +65,7 @@ def btSvr(exaile):
     server_sock.listen(1)
     port = server_sock.getsockname()[1]
     #some website said that this was a popular uuid...planning to generate my own and use it..need to look into this further..
-    uuid = "00001101-0000-1000-8000-00805F9B34FB"
+    uuid = "a9befec4-af8d-11e0-8272-001f3c68aa23"
     #more bluetooth stuff...
     advertise_service( server_sock, "MyExaileServer",
                            service_id = uuid,
